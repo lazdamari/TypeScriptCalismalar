@@ -32,6 +32,16 @@ ev.yemekYe();
 var Kisi = /** @class */ (function () {
     function Kisi() {
     }
+    Object.defineProperty(Kisi.prototype, "isim", {
+        get: function () {
+            return this._isim;
+        },
+        set: function (ad) {
+            this._isim = ad;
+        },
+        enumerable: true,
+        configurable: true
+    });
     Kisi.prototype.kaydet = function () {
         console.log("Kişi kaydedildi");
     };
@@ -58,6 +68,8 @@ var Personel = /** @class */ (function (_super) {
     return Personel;
 }(Kisi));
 var musteri = new Musteri();
+musteri.isim = "Ensar";
+console.log(musteri.isim);
 musteri.kaydet();
 musteri.satisYap();
 var personel = new Personel();

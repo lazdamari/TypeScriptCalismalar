@@ -50,6 +50,8 @@ class Personel extends Kisi {
 }
 
 let musteri = new Musteri()
+musteri.isim = "Ensar"
+console.log(musteri.isim)
 musteri.kaydet();
 musteri.satisYap();
 
