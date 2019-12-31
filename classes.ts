@@ -23,6 +23,15 @@ ev.yemekYe();
  */
 
 class Kisi {
+    private _isim: string
+
+    get isim(): string {
+        return this._isim;
+    }
+    set isim(ad: string) {
+        this._isim = ad
+    }
+
     kaydet() {
         console.log("Kişi kaydedildi")
     }
